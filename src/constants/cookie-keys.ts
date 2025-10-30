@@ -1,3 +1,3 @@
-export enum StorageKeys {
+export enum CookieKeys {
   ACCESS_TOKEN = 'accessToken',
 }
