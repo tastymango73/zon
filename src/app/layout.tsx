@@ -1,10 +1,10 @@
-import { Inter } from 'next/font/google'
+import { Geist } from 'next/font/google'
 
 import './globals.css'
 import { Providers } from '@/config/providers'
 
-const inter = Inter({
-  subsets: ['cyrillic', 'latin'],
+const geist = Geist({
+  subsets: ['latin', 'cyrillic'],
   variable: '--font-sans',
 })
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <Providers>
-        <body className={`${inter.className} antialiased`}>{children}</body>
+        <body className={`${geist.className} antialiased`}>{children}</body>
       </Providers>
     </html>
   )

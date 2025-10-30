@@ -18,8 +18,7 @@ const buttonVariants = cva(
         secondary: 'bg-white text-black hover:bg-white/90',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
-        primary:
-          'bg-gradient-to-t from-[oklch(0.75_0.21_140.02)] to-[oklch(0.832_0.2312_140.02)] text-primary-foreground hover:opacity-90',
+        primary: 'bg-primary text-primary-foreground hover:opacity-90',
       },
       size: {
         default: 'h-10 px-4 py-2',
@@ -27,6 +26,7 @@ const buttonVariants = cva(
         xs: 'h-9 rounded-lg px-3 text-xs',
         lg: 'h-11 rounded-lg px-8',
         icon: 'h-10 w-10',
+        catalog: 'px-3 py-2.5',
       },
     },
     defaultVariants: {
