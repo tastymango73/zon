@@ -1,5 +1,7 @@
 import { Geist } from 'next/font/google'
 
+import { MotionClient } from '@/components/features/motion/motion-client'
+
 import './globals.css'
 import { Providers } from '@/config/providers'
 
@@ -16,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <Providers>
-        <body className={`${geist.className} antialiased`}>{children}</body>
+        <body className={`${geist.className} antialiased`}>
+          <MotionClient />
+          {children}
+        </body>
       </Providers>
     </html>
   )
