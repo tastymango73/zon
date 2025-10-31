@@ -24,7 +24,7 @@ export function ProductCard({ title, price, imageUrl, rating }: ProductCardProps
             alt={title}
             width={360}
             height={360}
-            className='h-full w-full object-contain'
+            className='h-full w-full cursor-pointer object-contain transition-transform duration-500 ease-out hover:scale-107'
             priority={false}
           />
         </div>
@@ -45,7 +45,10 @@ export function ProductCard({ title, price, imageUrl, rating }: ProductCardProps
           <span className='text-lg'>{price.toLocaleString('ru-RU')} ₽</span>
         </div>
 
-        <Button size='lg' className='text-md mt-3 w-full rounded-md font-semibold'>
+        <Button
+          size='lg'
+          className='text-md mt-3 w-full rounded-md font-semibold transition-opacity duration-300 hover:opacity-80'
+        >
           Купить за {price.toLocaleString('ru-RU')} ₽
         </Button>
       </CardContent>

@@ -1,8 +1,7 @@
 import { Geist } from 'next/font/google'
 
-import { MotionClient } from '@/components/features/motion/motion-client'
-
 import './globals.css'
+import { MotionClient } from '@/config/motion-client'
 import { Providers } from '@/config/providers'
 
 const geist = Geist({

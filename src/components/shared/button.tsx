@@ -6,7 +6,7 @@ import { type ButtonHTMLAttributes, type ReactNode, forwardRef } from 'react'
 import { cn } from '@/utils/class-names'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap select-none rounded-lg transition-all will-change-transform active:hover:scale-[0.98] active:hover:transform text-sm font-medium ring-offset-background focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+  'cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap select-none rounded-lg transition-all will-change-transform active:hover:scale-[0.98] active:hover:transform text-sm font-medium ring-offset-background focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
   {
     variants: {
       variant: {
@@ -26,7 +26,6 @@ const buttonVariants = cva(
         xs: 'h-9 rounded-lg px-3 text-xs',
         lg: 'h-11 rounded-lg px-8',
         icon: 'h-10 w-10',
-        catalog: 'px-3 py-2.5',
       },
     },
     defaultVariants: {
