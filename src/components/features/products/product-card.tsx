@@ -1,0 +1,54 @@
+'use client'
+
+import { Star } from 'lucide-react'
+import Image from 'next/image'
+
+import { Button } from '@/components/shared/button'
+import { Card, CardContent } from '@/components/shared/card'
+
+interface ProductCardProps {
+  title: string
+  price: number
+  imageUrl: string
+  rating: number
+  isFavorite?: boolean
+}
+
+export function ProductCard({ title, price, imageUrl, rating }: ProductCardProps) {
+  return (
+    <Card className='w-full rounded-3xl border-none shadow-none'>
+      <CardContent className='p-4'>
+        <div className='w-full overflow-hidden rounded-2xl bg-white'>
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={360}
+            height={360}
+            className='h-full w-full object-contain'
+            priority={false}
+          />
+        </div>
+
+        <div className='mt-2 flex flex-col'>
+          <span className='inline-flex items-center gap-1'>
+            <Star className='h-4 w-4 fill-orange-300 text-orange-300' />
+            <span className='text-foreground text-sm font-medium'>{rating}</span>
+          </span>
+
+          <div className='text-md font-medium'>{title}</div>
+        </div>
+
+        <div className='mt-2 flex items-center gap-2 leading-none font-semibold'>
+          <span className='text-muted-foreground text-sm line-through'>
+            {Math.floor(price * 1.3).toLocaleString('ru-RU')} ₽
+          </span>
+          <span className='text-lg'>{price.toLocaleString('ru-RU')} ₽</span>
+        </div>
+
+        <Button size='lg' className='text-md mt-3 w-full rounded-md font-semibold'>
+          Купить за {price.toLocaleString('ru-RU')} ₽
+        </Button>
+      </CardContent>
+    </Card>
+  )
+}

@@ -31,7 +31,7 @@ export function HeroSection() {
         <Button size='lg' className='rounded-md' asChild>
           <Link href={ClientRoutes.HOME}>
             <ShoppingCart />
-            Перейти в каталог
+            Начать покупки
           </Link>
         </Button>
       </div>

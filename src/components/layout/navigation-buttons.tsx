@@ -8,7 +8,7 @@ import { cn } from '@/utils/class-names'
 const NAV_BUTTONS = [
   { href: ClientRoutes.HOME, src: '/person.svg', alt: 'Person', label: 'Войти' },
   { href: ClientRoutes.HOME, src: '/cart.svg', alt: 'Cart', label: 'Корзина' },
-  { href: ClientRoutes.HOME, src: '/favorite.svg', alt: 'Favorite', label: 'Избранное' },
+  // { href: ClientRoutes.HOME, src: '/favorite.svg', alt: 'Favorite', label: 'Избранное' },
 ]
 
 interface NavigationButtonsProps {

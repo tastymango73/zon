@@ -17,8 +17,5 @@
     "ui": "@/components/shared",
     "lib": "@/lib",
     "hooks": "@/hooks"
-  },
-  "registries": {
-    "@magicui": "https://magicui.design/r/{name}.json"
   }
 }

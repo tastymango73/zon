@@ -1,11 +1,10 @@
-import { HeroSection } from '@/components/features/home/hero-section'
+import { BestProductsSection } from '@/components/features/home/best-products-section'
 
 export default function HomePage() {
   return (
     <>
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <BestProductsSection />
     </>
   )
 }

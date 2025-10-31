@@ -2,22 +2,17 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-interface UseScrollVisibilityOptions {
+interface UseScrollVisibilityProps {
   showAt?: number
   hideAt?: number
   predictiveOffWindow?: number
-}
-
-interface UseScrollVisibilityReturn {
-  isVisible: boolean
-  instantHide: boolean
 }
 
 export function useScrollVisibility({
   showAt = 80,
   hideAt = 32,
   predictiveOffWindow = 140,
-}: UseScrollVisibilityOptions = {}): UseScrollVisibilityReturn {
+}: UseScrollVisibilityProps = {}) {
   const [isVisible, setIsVisible] = useState(false)
   const [instantHide, setInstantHide] = useState(false)
   const lastY = useRef(0)
