@@ -50,7 +50,7 @@ export function Header() {
             <div className='relative flex w-full items-center justify-between px-4 py-2'>
               <LogoSection />
               <div className='hidden items-center md:flex'>
-                <NavigationButtons />
+                <NavigationButtons compact />
               </div>
             </div>
           </div>

@@ -5,6 +5,8 @@ export default function HomePage() {
     <>
       {/* <HeroSection /> */}
       <BestProductsSection />
+      <BestProductsSection />
+      <BestProductsSection />
     </>
   )
 }
